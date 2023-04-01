@@ -1,12 +1,14 @@
 {
   "webRendering": [
     {
-      "title": "Client-Side Rendering (CSR)",
+      "title": "Client-Side Rendering",
+      "acronym": "CSR",
+      "type": "rendering-mode",
       "slug": "client-side-rendering",
       "description": "The website is rendered in the browser or client. Then, a framework like Vue generates HTML elements after the browser downloads and parses all the JavaScript code containing the instructions to create the current interface.",
       "character": {
         "name": "Justice Strauss",
-        "illustration": ""
+        "illustration": "/illustrations/justice-strauss.svg"
       },
       "benefits": [
         {
@@ -36,7 +38,7 @@
           "description": "Since the application relies on JavaScript to function, it can be difficult or impossible for users with JavaScript disabled or on devices with limited processing power to access the application."
         },
         {
-          "name": "Search Engine Optimization (SEO)",
+          "name": "SEO",
           "description": "Indexing and updating the content delivered via client-side rendering takes more time than a server-rendered HTML document. Search engine crawlers won't wait for the interface to be fully rendered on their first try to index the page. Your content will take more time to show and update in search results pages with pure client-side rendering."
         }
       ],
@@ -60,21 +62,25 @@
       ]
     },
     {
-      "title": "Search Engine Optimization (SEO)",
+      "title": "Search Engine Optimization",
+      "acronym": "SEO",
+      "type": "rendering-woe",
       "slug": "woe-search-engine-optimization",
       "description": "Indexing and updating the content delivered via client-side rendering takes more time than a server-rendered HTML document. Search engine crawlers won't wait for the interface to be fully rendered on their first try to index the page. Your content will take more time to show and update in search results pages with pure client-side rendering.",
       "character": {
         "name": "Count Olaf",
-        "illustration": ""
+        "illustration": "/illustrations/count-olaf.svg"
       }
     },
     {
-      "title": "Server-Side Rendering (SSR)",
+      "title": "Server-Side Rendering",
+      "acronym": "SSR",
+      "type": "rendering-mode",
       "slug": "server-side-rendering",
       "description": "This technique involves rendering the HTML of a webpage on the server before it is sent to the user's device. This can improve the perceived performance of a webpage, as the user's device does not need to spend time rendering the HTML. \n SSR pages are generated on the server, and a populated HTML is served to your users, unlike CSR, which serves skeleton HTML and uses JavaScript on the client side to generate HTML. \n This approach is commonly used with traditional multi-page applications, where the server generates a new HTML page for each request.",
       "character": {
         "name": "Uncle Monty",
-        "illustration": ""
+        "illustration": "/illustrations/uncle-monty.svg"
       },
       "benefits": [
         {
@@ -132,21 +138,25 @@
       ]
     },
     {
-      "title": "High server requests",
-      "slug": "woe-high-server-requests",
-      "description": "Since the server is responsible for rendering the HTML, it can put a lot of load on the server, particularly for large or complex applications. It demands more performance from your servers to generate HTML, and the number of server requests is way higher compared to CSR mode as every page is generated from scratch.",
+      "title": "Increased server load",
+      "acronym": "",
+      "type": "rendering-woe",
+      "slug": "woe-increased-server-load",
+      "description": "It demands more performance from your servers to generate HTML. The number of server requests is way higher.",
       "character": {
         "name": "Olaf's acting troupe",
-        "illustration": ""
+        "illustration": "/illustrations/olaf-acting-troupe.svg"
       }
     },
     {
-      "title": "Static Site Generation (SSG)",
+      "title": "Static Site Generation",
+      "acronym": "SSG",
+      "type": "rendering-mode",
       "slug": "static-site-generation",
       "description": "",
       "character": {
         "name": "Aunt Josephine",
-        "illustration": ""
+        "illustration": "/illustrations/aunt-josephine.svg"
       },
       "benefits": [
         {
@@ -200,89 +210,25 @@
       ]
     },
     {
-      "title": "SSG drawback",
-      "slug": "woe-ssg-drawback",
-      "description": "",
+      "title": "Build time",
+      "acronym": "",
+      "type": "rendering-woe",
+      "slug": "woe-build-time",
+      "description": "The real disadvantage of static site generators is the total time it takes to build all the static pages.",
       "character": {
         "name": "Captain Sham",
-        "illustration": ""
+        "illustration": "/illustrations/captain-sham.svg"
       }
     },
     {
-      "title": "Incremental Static Regeneration (ISR)",
-      "slug": "incremental-static-regeneration",
-      "description": "",
-      "character": {
-        "name": "Larry “Anxious Clown”",
-        "illustration": ""
-      },
-      "benefits": [
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        }
-      ],
-      "drawbacks": [
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        }
-      ],
-      "useCases": [
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        },
-        {
-          "name": "",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "title": "ISR drawback",
-      "slug": "woe-isr-drawback",
-      "description": "",
-      "character": {
-        "name": "Georgina Orwell",
-        "illustration": ""
-      }
-    },
-    {
-      "title": "Deferred Site Generation (DSG) / Distributed Persistent Rendering (DPR)",
+      "title": "Deferred Site Generation",
+      "acronym": "DSG",
+      "type": "rendering-mode",
       "slug": "deferred-site-generation",
       "description": "",
       "character": {
-        "name": "Quagmire siblings",
-        "illustration": ""
+        "name": "Larry “Anxious Clown”",
+        "illustration": "/illustrations/larry-clown.svg"
       },
       "benefits": [
         {
@@ -336,21 +282,97 @@
       ]
     },
     {
-      "title": "DSG drawback",
-      "slug": "woe-dsg-drawback",
+      "title": "Small changes",
+      "acronym": "",
+      "type": "rendering-woe",
+      "slug": "woe-small-changes",
+      "description": "When changes that affect 1 page are published, it run the build process again.",
+      "character": {
+        "name": "Georgina Orwell",
+        "illustration": "/illustrations/georgina-oswell.svg"
+      }
+    },
+    {
+      "title": "Incremental Static Regeneration",
+      "acronym": "ISR",
+      "type": "rendering-mode",
+      "slug": "incremental-static-regeneration",
       "description": "",
       "character": {
+        "name": "Quagmire siblings",
+        "illustration": "/illustrations/quagmires.svg"
+      },
+      "benefits": [
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        }
+      ],
+      "drawbacks": [
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        }
+      ],
+      "useCases": [
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "title": "Inconsistent for real-time updates",
+      "acronym": "",
+      "type": "rendering-woe",
+      "slug": "woe-inconsistent-for-realtime-updates",
+      "description": "The first visitor to a page triggers revalidation, but first sees a fallback page with outdated data (stale page). Solution ISR 2.0 → On-demand ISR",
+      "character": {
         "name": "Carmelita Spats",
-        "illustration": ""
+        "illustration": "/illustrations/carmelita.svg"
       }
     },
     {
       "title": "Edge Rendering",
+      "acronym": "",
+      "type": "rendering-mode",
       "slug": "edge-rendering",
       "description": "",
       "character": {
-        "name": "",
-        "illustration": ""
+        "name": "Olivia Caliban",
+        "illustration": "/illustrations/olivia-caliban.svg"
       },
       "benefits": [
         {
@@ -404,21 +426,25 @@
       ]
     },
     {
-      "title": "Edge Rendering drawback",
-      "slug": "woe-edge-rendering-drawback",
-      "description": "",
+      "title": "Flexibility: specific use case",
+      "acronym": "",
+      "type": "rendering-woe",
+      "slug": "woe-flexibility-specific-use-case",
+      "description": "When the project requires using multiple rendering modes. A website with sections for different purposes, an admin area for the user, pages with real time data and pages with static content, text and images.",
       "character": {
-        "name": "-",
-        "illustration": ""
+        "name": "Coach Genghis",
+        "illustration": "/illustrations/coach-genghis.svg"
       }
     },
     {
-      "title": "Hybrid Rendering: Combining SSR, CSR and/or SSG",
+      "title": "Hybrid Rendering",
+      "acronym": "",
+      "type": "rendering-mode",
       "slug": "hybrid-rendering-ssr-csr-ssg",
-      "description": "This technique combines server-side and client-side rendering, where the initial HTML is rendered on the server, and then JavaScript is used to update the page dynamically.",
+      "description": "Combining SSR, CSR and/or SSG. This technique combines server-side and client-side rendering, where the initial HTML is rendered on the server, and then JavaScript is used to update the page dynamically.",
       "character": {
-        "name": "",
-        "illustration": ""
+        "name": "Mr Poe",
+        "illustration": "/illustrations/mr-poe.svg"
       },
       "benefits": [
         {

@@ -7,12 +7,18 @@ module.exports = {
     },
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '1rem'
+    },
     extend: {
       colors: {
         woes: {
           light: '#decea7',
           medium: '#937C50',
-          dark: '#231C18'
+          dark: '#231C18',
+          red: '#FF5942',
+          green: '#41B883'
         }
       },
       gridRow: {
