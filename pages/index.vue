@@ -1,15 +1,15 @@
 <template>
-  <div class="container p-12 md:p-20">
-    <h1 class="flex flex-col text-3xl font-medium uppercase text-center pb-8">
+  <div class="container py-12 px-6 md:p-20">
+    <h1 class="flex flex-col text-lg md:text-3xl font-medium uppercase text-center pb-8">
       A saga of
-      <span class="font-extrabold text-6xl md:text-8xl">web rendering woes</span>
+      <span class="font-extrabold text-4xl md:text-8xl">web rendering woes</span>
     </h1>
     <section class="pb-12">
       <article class="flex flex-col gap-6 items-center">
         <figure>
           <img height="338" width="500" src="/illustrations/baudelaires.svg" alt="The Baudelaires illustration" />
         </figure>
-        <h2 class="text-5xl uppercase">The website</h2>
+        <h2 class="text-2xl md:text-5xl uppercase">The website</h2>
       </article>
     </section>
     <section class="grid grid-cols-1 md:grid-cols-[1fr_4px_1fr] md:gap-x-10">

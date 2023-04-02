@@ -11,7 +11,7 @@
         loading="lazy"
       />
     </figure>
-    <h2 class="w-5/6 md:w-2/5 text-4xl flex flex-col items-center md:items-start gap-4">
+    <h2 class="w-5/6 md:w-2/5 text-2xl md:text-4xl flex flex-col items-center md:items-start gap-4">
       {{ item.title }}
       <NuxtLink :to="`/slide/${item.slug}`">
         <ion-icon name="duplicate-outline" size="large"></ion-icon>
