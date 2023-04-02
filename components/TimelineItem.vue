@@ -5,7 +5,7 @@
         v-if="item.character?.illustration"
         height="250"
         width="250"
-        class="mx-auto w-1/2 md:w-auto"
+        class="mx-auto w-2/3 md:w-auto"
         :src="item.character.illustration"
         :alt="`${item.character.name} illustration`"
         loading="lazy"
@@ -13,7 +13,7 @@
     </figure>
     <h2 class="w-5/6 md:w-2/5 text-2xl md:text-4xl flex flex-col items-center md:items-start gap-4">
       {{ item.title }}
-      <NuxtLink :to="`/slide/${item.slug}`">
+      <NuxtLink :to="`/slide/${item.slug}`" class="focus-visible:outline-none focus-visible:text-white">
         <ion-icon name="duplicate-outline" size="large"></ion-icon>
       </NuxtLink>
     </h2>
